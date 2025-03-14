@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="displaydiv('home')">Home</button>
+  <button onclick="displaydiv('forest')">Forest</button>
+  <button onclick="displaydiv('desert')">Desert</button>
+  <button onclick="displaydiv('savanna')">Savanna</button>
+  
+  <div id="home">
+    <div class="header">
+      Welcome to Hide and Seek!
+    </div>
+    <div style="height: 100px;"></div>
+    <div class="homeopttxt">
+      Would you like to...
+    </div>
+    <div class="flex">
+      <div class="cell"></div>
+      <div class="cell homeopttxt">
+      <div class="homeoptionimg hideimg"></div>
+        Hide
+      </div>
+      <div class="cell homeopttxt" style="margin-top: 80px">
+        OR
+      </div>
+      <div class="cell homeopttxt">
+        <div class="homeoptionimg seekimg"></div>
+        Seek?
+      </div>
+      <div class="cell"></div>
+    </div>    
+  </div>
+  
+  <div id="forest" class="forest" style="display: none;">
+    <div class="header">
+      Forest
+    </div>
+    <img src="https://heraldicart.org/pine/pine-tree-1-outline.png" class="hidingspot">
+  </div>
+  
+  <div id="desert" class="desert" style="display: none;">
+    <div class="header">
+      Desert
+    </div>
+    <img src="https://static.vecteezy.com/system/resources/previews/001/209/560/non_2x/cactus-png.png" class="hidingspot">
+  </div>
+  
+  <div id="savanna" class="savanna" style="display: none;">
+    <div class="header">
+      Savanna
+    </div>
+    <img src="https://static.thenounproject.com/png/610802-512.png" class="hidingspot">
+  </div>
+</body>
+</html>
