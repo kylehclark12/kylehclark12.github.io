@@ -20,6 +20,42 @@ body {
   flex: 1;
 }
 
+.buttoncase {
+  background-color: lightgray;
+}
+
+.menubutton {
+  flex: 1;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 30px;
+  border: solid 1px;
+}
+
+.hom-but {
+  background-color: 
+}
+
+.for-but {
+  background-color: forestgreen;
+}
+
+.des-but {
+  background-color: tan;
+}
+
+.sav-but {
+  background-color: #B2BF70;
+}
+
+.menubutton:hover {
+  box-shadow: 0 0 2px 2px #5EE1F1;
+}
+
 .homeopttxt {
   text-align: center;
   font-size: 20px;
