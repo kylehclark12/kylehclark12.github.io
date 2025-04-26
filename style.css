@@ -4,7 +4,12 @@ html {
 body {
   margin: 0;
 }
-
+div {
+font-family: courier;	
+}
+#home {
+	background: #F3ECDB;
+}
 .header {
   font-size: 50px;
   text-align: center;
@@ -21,7 +26,7 @@ body {
 }
 
 .buttoncase {
-  background-color: lightgray;
+  background-color: #F3ECDB;
 }
 
 .menubutton {
@@ -37,7 +42,7 @@ body {
 }
 
 .hom-but {
-  background-color: 
+  background-color: #F3ECDB
 }
 
 .for-but {
@@ -52,6 +57,10 @@ body {
   background-color: #B2BF70;
 }
 
+.ext-but {
+	background-color: lightblue;
+}
+
 .menubutton:hover {
   box-shadow: 0 0 2px 2px #5EE1F1;
 }
@@ -59,6 +68,10 @@ body {
 .homeopttxt {
   text-align: center;
   font-size: 20px;
+}
+.infotext {
+	font-size: 20px;
+	text-align: center;
 }
 
 .homeoptionimg {
@@ -102,7 +115,9 @@ body {
 .savanna {
   background-color: #B2BF70;
 }
-
+.extras {
+	background-color: lightblue;
+}
 .hidingspot {
   height: 200px;
 }
