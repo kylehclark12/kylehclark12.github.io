@@ -6,63 +6,102 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div id="buttoncase" class="buttoncase flex">
-      <div class="menubutton hom-but" onclick="displaydiv('home')">Home</div>
-      <div class="menubutton for-but" onclick="displaydiv('forest')">Forest</div>
-      <div class="menubutton des-but" onclick="displaydiv('desert')">Desert</div>
-      <div class="menubutton sav-but" onclick="displaydiv('savanna')">Savanna</div>
-	  <div class="menubutton ext-but" onclick="displaydiv('extras')">Extras</div>
-    </div>
+   <div id="buttoncase" class="buttoncase flex">
+						<div class="menubutton hom-but" onclick="displaydiv('home')">Home</div>
+						<div class="menubutton for-but" onclick="displaydiv('forest')">Forest</div>
+						<div class="menubutton des-but" onclick="displaydiv('desert')">Desert</div>
+						<div class="menubutton sav-but" onclick="displaydiv('savanna')">Savanna</div>
+						<div class="menubutton ext-but" onclick="displaydiv('extras')">Extras</div>
+				</div>
 
-    <div id="home">
-      <div class="header">
-        Welcome to Hide and Seek!
-      </div>
-      <div style="height: 100px;"></div>
-      <div class="homeopttxt">
-        Would you like to...
-      </div>
-      <div class="flex">
-        <div class="cell"></div>
-        <div class="cell homeopttxt">
-          <div class="homeoptionimg hideimg"></div>
-          Hide
-        </div>
-        <div class="cell homeopttxt" style="margin-top: 80px">
-          OR
-        </div>
-        <div class="cell homeopttxt">
-          <div class="homeoptionimg seekimg"></div>
-          Seek?
-        </div>
-        <div class="cell"></div>
-      </div>    
-    </div>
+				<div id="home">
+						<div class="header">
+								Welcome to Hide and Seek!
+						</div>
+						<div style="height: 50px;"></div>
+						<div class="homeopttxt">
+								Would you like to...
+						</div>
+						<div class="flex">
+								<div class="cell"></div>
+								<div onclick="hideseekgame('hide')" class="cell menubutton mainopt">
+										HIDE
+								</div>
+								<div class="cell homeopttxt mainopt">
+										OR
+								</div>
+								<div onclick="hideseekgame('seek')" class="cell menubutton mainopt">
+										SEEK?
+								</div>
+								<div class="cell"></div>
+						</div>    
+				</div>
 
-    <div id="forest" class="forest" style="display: none;">
-      <div class="header">
-        Forest
-      </div>
-      <img src="https://heraldicart.org/pine/pine-tree-1-outline.png" class="hidingspot">
-    </div>
+				<div id="forest" class="forest" style="display: none;">
+						<div class="header">
+								Forest
+						</div>
+						<div onclick="hidingspot('f1')" class="hidingspot hl">
+							<img src="tree.png">
+						</div>
+						<div onclick="hidingspot('f2')" class="hidingspot hr">
+							<img src="bear.png">
+						</div>
+						<div onclick="hidingspot('f3')" class="hidingspot hl">
+							<img src="deer.png">
+						</div>
+						<div onclick="hidingspot('f4')" class="hidingspot hr">
+							<img src="wolf.png">
+						</div>
+						<div onclick="hidingspot('f5')" class="hidingspot hl">
+							<img src="squirrel.png">
+						</div>
+				</div>
 
-    <div id="desert" class="desert" style="display: none;">
-      <div class="header">
-        Desert
-      </div>
-      <img src="https://static.vecteezy.com/system/resources/previews/001/209/560/non_2x/cactus-png.png" class="hidingspot">
-    </div>
+				<div id="desert" class="desert" style="display: none;">
+						<div class="header">
+								Desert
+						</div>
+						<div onclick="hidingspot('d1')" class="hidingspot hl">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('d2')" class="hidingspot hr">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('d3')" class="hidingspot hl">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('d4')" class="hidingspot hr">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('d5')" class="hidingspot hl">
+							<img src="">
+						</div>
+				</div>
 
-    <div id="savanna" class="savanna" style="display: none;">
-      <div class="header">
-        Savanna
-      </div>
-      <img src="https://static.thenounproject.com/png/610802-512.png" class="hidingspot">
-    </div>
-	<div id="extras" class="extras" style="display: none">
-		<div class="header">Extras</div>
-		<div class="infotext">This is not a hiding place, but here are some fun animations I have made.</div>
-	</div>
-    <script src="script.js"></script>
+				<div id="savanna" class="savanna" style="display: none;">
+						<div class="header">
+								Savanna
+						</div>
+						<div onclick="hidingspot('s1')" class="hidingspot hl">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('s2')" class="hidingspot hr">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('s3')" class="hidingspot hl">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('s4')" class="hidingspot hr">
+							<img src="">
+						</div>
+						<div onclick="hidingspot('s5')" class="hidingspot hl">
+							<img src="">
+						</div>
+				</div>
+				<div id="extras" class="extras" style="display: none">
+						<div class="header">Extras</div>
+						<div class="infotext">This is not a hiding place, but here are some fun animations I have made.</div>
+				</div>    <script src="script.js"></script>
   </body>
 </html>
