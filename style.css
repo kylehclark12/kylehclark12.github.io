@@ -134,6 +134,7 @@ img {
 .hidingspot {
 	height: 200px;
 	width: 400px;
+	text-align: center;
 }
 .hr {
 	margin-right: 0;
