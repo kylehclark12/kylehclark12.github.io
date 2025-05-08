@@ -171,6 +171,7 @@ img {
 	text-align: center;
 	width: 140px;
 	background: #CF2031;
+	border-radius: 5px;
 }
 #stickman {
 	position: absolute;
