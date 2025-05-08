@@ -276,8 +276,12 @@ function hidingspot(place) {
 	}
 
 function notthere() {
+	clearnotthere()
 	clearTimeout(nottheretimer)
-	nottheretimer = setTimeout(clearnotthere, 1500)
+	nottheretimer = setTimeout(clearnotthere, 1600)
+	setTimeout(shownotthere, 100)
+}
+function shownotthere() {
 	document.getElementById("notthere").style.display = "block"
 }
 function clearnotthere() {
