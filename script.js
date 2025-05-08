@@ -30,19 +30,19 @@ const pllleg = document.getElementById("pllleg")
 const animdelay = 1
 const allspots = [
 		["forest", "84px", "100px"],
-		["forest", "284px", "calc(100% - 100px)"],
+		["forest", "284px", "calc(100% - 200px)"],
 		["forest", "484px", "100px"],
-		["forest", "684px", "calc(100% - 100px)"],
+		["forest", "684px", "calc(100% - 200px)"],
 		["forest", "884px", "100px"],
 		["desert", "84px", "100px"],
-		["desert", "284px", "calc(100% - 100px)"],
+		["desert", "284px", "calc(100% - 200px)"],
 		["desert", "484px", "100px"],
-		["desert", "684px", "calc(100% - 100px)"],
+		["desert", "684px", "calc(100% - 200px)"],
 		["desert", "884px", "100px"],
 		["savanna", "84px", "100px"],
-		["savanna", "284px", "calc(100% - 100px)"],
+		["savanna", "284px", "calc(100% - 200px)"],
 		["savanna", "484px", "100px"],
-		["savanna", "684px", "calc(100% - 100px)"],
+		["savanna", "684px", "calc(100% - 200px)"],
 		["savanna", "884px", "100px"]
 	]
 const decidetohidedisplay = document.getElementById("decidetohide")
