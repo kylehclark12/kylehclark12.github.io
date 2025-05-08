@@ -328,6 +328,9 @@ function decidetohide(input) {
 		decidetohidedisplay.style.display = "none"
 		setTimeout(searchforplayer, 500)
 	}
+	else {
+	decidetohidedisplay.style.display = "none"
+	}
 }
 
 function searchforplayer() {
