@@ -405,7 +405,7 @@ currentgame = false
 isplayerhidden = false
 gameisrunning = false
 hidinglocation = false
-stman.style.top = "50%"
+stman.style.top = "52%"
 stman.style.left = "calc(50% - 20px)"
 animStand()
 }
