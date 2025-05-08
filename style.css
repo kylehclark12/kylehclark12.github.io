@@ -12,9 +12,13 @@ img {
 	height: 100%;
 	margin: auto;
 }
+:root {
+	--smheight: 200px;
+}
+
 #home {
 	background: #F3ECDB;
-	height: 100%;
+	height: calc(100% - 36px);
 }
 .header {
 	font-size: 50px;
@@ -41,10 +45,14 @@ img {
 	border-radius: 5px;
 	border: none;
 	margin: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
 	background-color: lightgray;
+	color: black;
 	text-align: center;
 	line-height: 30px;
-	border: solid 1px;
+	padding-right: 2px;
+	padding-left: 2px;
 }
 
 .mainopt {
@@ -84,57 +92,30 @@ img {
 	font-size: 20px;
 	text-align: center;
 }
-
 .homeoptionimg {
 	height: 100px;
 }
-
-.hideimg {
-	background-image: url("https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-High-Quality-Image.png");
-	background-size: 60px 5px;
-	margin-left: 40px;
-	width: 65px;
-}
-
-.hideimg:hover {
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyaTeUdZT0Rv0WwN76LamCQh0DmMsxzNKEktKUQYPSg&s=10");
-	background-size: 100px;
-	margin: 0;
-	width: 100px;
-}
-
-.seekimg {
-	background-image: url("https://media.istockphoto.com/id/1987580072/vector/person-thinking-about-problem-vector-cartoon-stick-figure-illustration.webp?b=1&s=612x612&w=0&k=20&c=udZAjpRAoDCVbvVJnpKWHNhjcofr1Fo3S3-MTYbqjXA=");
-	background-size: 90px;
-	width: 90px;
-}
-
-.seekimg:hover {
-	background-image: url("https://cdn.vectorstock.com/i/500p/75/05/cartoon-of-man-searching-with-magnifying-glass-vector-23967505.jpg");
-	background-size: 95px;
-	width: 95px;
-}
-
 .forest {
 	background-color: forestgreen; 
 	min-height: 100%;
 }
-
 .desert {
 	background-color: tan;
+	min-height: 100%;
 }
-
 .savanna {
 	background-color: #B2BF70;
+	min-height: 100%;
 }
 .extras {
 	background-color: lightblue;
 	min-height: 100%;
 }
 .hidingspot {
-	height: 200px;
-	width: 400px;
 	text-align: center;
+	height: var(--smheight);
+	width: calc(2 * var(--smheight));
+	border-radius: 10px;
 }
 .hr {
 	margin-right: 0;
@@ -143,6 +124,459 @@ img {
 .hl {
 	margin-left: 0;
 }
+
+.clicker {
+	border: solid black;
+	display: flex;
+	flex-direction: column;
+	background: gray;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	max-width: 300px;
+	margin: auto;
+}
+.clickercell {
+	border: solid;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	background: lightgray;
+	font-family: courier;
+	color: black;
+}
+.blockscreen {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+.decidetohide {
+	position: fixed;
+	top: calc(50% - 50px);
+	left: calc(50% - 100px);
+	background: gray;
+	color: white;
+	width: 200px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2px;
+}
+.notthere {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: calc(50% - 70px);
+	text-align: center;
+	width: 140px;
+	background: #CF2031;
+}
+#stickman {
+	position: absolute;
+	left: calc(50% - var(--smheight) / 10);
+	top: 50%;
+	height: calc(var(--smheight) * .8);
+	width: calc(var(--smheight) * .2);
+}
+#pstickman {
+	position: absolute;
+	display: none;
+	top: 100px;
+	height: calc(var(--smheight) * .8);
+	width: calc(var(--smheight) * .2);
+}
+.sm {
+	position: absolute;
+}
+.sma {
+	width: 2px;
+	height: calc(var(--smheight) / 5);
+	background: black;
+	transform-origin: top;
+}
+.smla {
+	top: calc(var(--smheight) / 5)
+}
+.head {
+	height: calc(var(--smheight) / 5 - 2px);
+	width: calc(var(--smheight) / 5 - 2px);
+	top: calc(-1 * var(--smheight) / 5);
+	left: calc(var(--smheight) / -10);
+	border-radius: 50%;
+	border: 2px solid;
+	background: white;
+	transform-origin: bottom;
+}
+.body {
+	height: calc(var(--smheight) * 2 / 5);
+	top: calc(var(--smheight) / 5);
+	left: calc(var(--smheight) / 10);
+}
+.shl {
+	height: 0;
+	width: 0;
+}
+.rarm {
+	rotate: -15deg;
+	animation: hidera 1s linear infinite alternate;
+}
+.rfarm {
+}
+.larm {
+	rotate: 15deg;
+	animation: hidela 1s linear infinite alternate;
+}
+.lfarm {
+}
+.rleg {
+	rotate: -15deg;
+	top: calc(var(--smheight) / 5 * 2);
+}
+.rlleg {
+}
+.lleg {
+	rotate: 15deg;
+	top: calc(var(--smheight) / 5 * 2);
+}
+.llleg {
+}
+
+.binoculars {
+	display: none;
+	position: absolute;
+	top: calc(var(--smheight) * 4 / -25);
+	left: calc(var(--smheight) / -10);
+	border-radius: calc(var(--smheight) / 20);
+	background: gray;
+	height: calc(var(--smheight) / 10);
+	width: calc(var(--smheight) / 5);
+}
+
+.rlens {
+	position: absolute;
+	background: lightblue;
+	height: calc(var(--smheight) * 8 / 100);
+	width: calc(var(--smheight) * 8 / 100);
+	border-radius: 50%;
+	left: calc(var(--smheight) * 11 / 100);
+}
+.llens {
+	position: absolute;
+	background: lightblue;
+	height: calc(var(--smheight) * 8 / 100);
+	width: calc(var(--smheight) * 8 / 100);
+	border-radius: 50%;
+	left: calc(var(--smheight) * 1 / 100);
+}
+.speech {
+	display: none;
+	position: absolute;
+	top: calc(var(--smheight) * -3 / 5);
+	width: var(--smheight);
+	padding-left: 2px;
+	padding-right: 2px;
+	left: calc(var(--smheight) / -2);
+	background: white;
+	border-radius: calc(var(--smheight) / 100);
+	border: solid 1px;
+	text-align: center;
+	font-family: courier;
+}
+
+
+@keyframes wavera {
+	0% {
+		rotate: -15deg;
+	}
+	25% {
+		rotate: -15deg;
+	}
+	50% {
+		rotate: -100deg;
+	}
+	100% {
+		rotate: -100deg
+	}
+}
+@keyframes waverfa {
+	0% {
+		rotate: 0deg;
+	}
+	50% {
+		rotate: 0deg;
+	}
+	70% {
+		rotate: -100deg;
+	}
+}
+
+
+
+@keyframes binra {
+	0%,100% {
+		rotate: -90deg;
+	}
+	0% {
+		scale: 1 .5;
+	}
+	
+}
+@keyframes binrfa {
+	0%, 100% {
+		rotate: -135deg;
+	}
+	0% {	
+		width: 3px;
+	}
+}
+@keyframes binla {
+	0%, 100% {
+		rotate: 90deg;
+	}
+	100% {
+		scale: 1 .5;
+	}
+}
+@keyframes binlfa {
+	0%, 100% {
+		rotate: 135deg
+	}
+	100% {
+		width: 3px;
+	}
+}
+@keyframes rlens {
+	0% {
+		left: calc(var(--smheight) * 7 / 100);
+		scale: 0.5 1;
+	}
+	50% {
+		left: calc(var(--smheight) * 11 / 100);	
+		scale: 1;
+	}
+	100% {
+		left: calc(var(--smheight) * 13 / 100);
+		scale: .5 1;
+	}
+}
+@keyframes llens {
+	0% {
+		left: 0;
+		scale: .5 1;
+	}
+	50% {
+		left: calc(var(--smheight) * 1 / 100);
+		scale: 1;
+	}
+	100% {
+		left: calc(var(--smheight) * 5 / 100);
+		scale: .5 1;	
+	}
+}
+
+@keyframes binoculars {
+	0% {
+		rotate: y -45deg;
+		left: calc(var(--smheight) / -8);
+	}
+	100% {
+		rotate: y 45deg;
+		left: calc(var(--smheight) / -16)
+	}
+}
+
+
+@keyframes walkbody {
+	0%, 100% {
+		top: calc(var(--smheight) / 5);
+	}
+	25% {
+		top: calc(var(--smheight) / 5 - var(--smheight) / 20);
+	}
+	50% {
+		top: calc(var(--smheight) / 5);
+	}
+	75% {
+		top: calc(var(--smheight) / 5 - var(--smheight) / 20);
+	}
+}
+@keyframes walkra {
+	0%, 100% {
+		rotate: -30deg;
+	}	
+	50% {
+		rotate: 30deg;
+	}
+}
+@keyframes walkrfa {
+	0%, 100% {
+		rotate: -60deg;
+	}	
+	25% {
+		rotate: 5deg;
+	}
+	50% {
+		rotate: -5deg;
+	}
+	75% {
+		rotate: 5deg;
+	}
+}
+@keyframes walkla {
+	0%, 100% {
+		rotate: 30deg;
+	}	
+	50% {
+		rotate: -30deg;
+	}
+}
+@keyframes walklfa {
+	0%, 100% {
+		rotate: -5deg;
+	}	
+	25% {
+		rotate: -5deg;
+	}
+	50% {
+		rotate: -60deg;
+	}
+	75% {
+		rotate: -5deg;
+	}
+}
+@keyframes walkrl {
+	0%, 100% {
+		rotate: -30deg;
+	}	
+	25% {
+		rotate: -30deg;
+	}
+	50% {
+		rotate: 15deg;
+	}
+	75% {
+		rotate: 15deg;
+	}
+}
+@keyframes walkrll {
+	0%, 100% {
+		rotate: 90deg;
+	}	
+	25% {
+		rotate: 0deg;
+	}
+	50% {
+		rotate: 0deg;
+	}
+}
+@keyframes walkll {
+	0%, 100% {
+		rotate: 15deg;
+	}	
+	25% {
+		rotate: 15deg;
+	}
+	50% {
+		rotate: -30deg;
+	}
+	75% {
+		rotate: -30deg;
+	}
+}
+@keyframes walklll {
+	0%, 100% {
+		rotate: 0deg;
+	}	
+	50% {
+		rotate: 90deg;
+	}
+	75% {
+		rotate: 0deg;
+	}
+}
+
+
+@keyframes hidera {
+	100% {
+		rotate: -20deg;
+	}
+}
+@keyframes hiderfa {
+	0%, 100% {
+		rotate: 60deg;
+	}
+}
+@keyframes hidela {
+	100% {
+		rotate: 20deg;	
+	}
+}
+@keyframes hidelfa {
+	0%, 100% {
+		rotate: 45deg
+	}
+}
+@keyframes hiderl {
+	0%, 100% {
+		rotate: 100deg
+	}
+}
+@keyframes hiderll {
+	0%, 100% {
+		rotate: -100deg;
+	}
+}
+@keyframes hidell {
+	0%, 100% {
+	}
+}
+@keyframes hidelll {
+	0%, 100% {
+		rotate: -105deg
+	}
+}
+
+@keyframes hidehead {
+	0% {
+		rotate: -30deg;
+	}
+	100% {
+		rotate: -15deg;
+	}
+}
+
+
+@keyframes menuhide {
+	0%, 33% {
+		rotate: y 0deg;
+	}
+	66%, 100% {
+		rotate: y 90deg;
+	}
+}
+
+@keyframes walkaway {
+	100% {
+		scale: 0;
+	}
+}
+@keyframes apparate {
+	100% {
+		rotate: y 90deg;
+	}
+}
+
+@keyframes apparatein {
+	0% {
+		rotate: y 90deg;
+	}
+	100% {
+		rotate: y 0deg;
+	}
+}
+
+
 
 
 
