@@ -176,7 +176,7 @@ img {
 #stickman {
 	position: absolute;
 	left: calc(50% - var(--smheight) / 10);
-	top: 50%;
+	top: 52%;
 	height: calc(var(--smheight) * .8);
 	width: calc(var(--smheight) * .2);
 }
